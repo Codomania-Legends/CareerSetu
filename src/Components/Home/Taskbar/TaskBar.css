@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.alltask {
+    /* background-color: aqua; */
+    height: 16em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+}
+.taskmenu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.triangle {
+    transition: all;
+    transition-duration: 0.5s;
+    display: none;
+    position: absolute;
+    top: 9em;
+    width: 14em;
+    padding: 8px;
+}
+.task {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #081F2E, #383838);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    box-shadow: 4px 4px 4px #a8a8a8;
+    opacity: 0;
+}
+.task{
+    opacity: 1;
+    transition-duration: 0.5s ;
+}
+.upperDiv, .midDiv, .lowerDiv {
+    display: flex;
+}
+.upperDiv {
+    height: 5em;
+    width: 13.8em;
+    justify-content: space-between;
+    align-items: center;
+}
+.midDiv {
+    justify-content: space-around;
+    height: 3em;
+    width: 13em;
+    align-items: center;
+}
+.lowerDiv {
+    align-items: center;
+    justify-content: center;
+    width: 13em;
+}
+
+
+#menu{
+    z-index: 5 ;
+}
+
+/*  */
+
+
+.task:hover .textTaskMenu{
+    transition: all;
+    transition-duration: 0.5s;
+    font-size: 7px;
+    color: white;
+    display: block;
+}
+
+.task:hover{
+    transition: all;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.task:hover .imageTaskMenu{
+    transition: all;
+    transition-duration: 0.5s;
+    height: 1.7em;
+}
+
+img.imageTaskMenu {
+    height: 2em;
+}
+span.textTaskMenu {
+    display: none;
+}
+
+#div1{animation: animationDiv1 1s ease-in-out 1  ;}
+#div2{animation: animationDiv2 1s ease-in-out 1  ;}
+#div3{animation: animationDiv3 1s ease-in-out 1  ;}
+#div4{animation: animationDiv4 1s ease-in-out 1  ;}
+#div5{animation: animationDiv5 1s ease-in-out 1  ;} 
+
+@keyframes animationDiv1 {
+    0% {
+        position: relative;
+        left: 5em;
+        top: -4em;
+    }
+    50%{
+        top: 0;
+    }
+    100% {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes animationDiv2 {
+    0% {
+        position: relative;
+        right: 5em;
+        top: -4em;
+    }
+    50%{
+        top: 0;
+    }
+    100% {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
+@keyframes animationDiv3 {
+    0% {
+        position: relative;
+        left: 3em;
+        top: -8em;
+    }
+    50% {
+        top: 0;
+    }
+    100% {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes animationDiv4 {
+    0% {
+        position: relative;
+        right: 3em;
+        top: -8em;
+    }
+    50% {
+        top: 0;
+    }
+    100% {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
+@keyframes animationDiv5 {
+    0% {
+        position: relative;
+        top: -8em;
+        z-index: -5;
+    }
+    100% {
+        position: relative;
+        right: 0;
+        top: 0;
+        z-index: -5;
+    }
+}

@@ -1,0 +1,144 @@
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #081F2E;
+}
+/* sign up */
+.image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.elements {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.details {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input {
+    height: 3.5em;
+    width: 20em;
+    outline: none;
+    border: none;
+    border-radius: 26px;
+    background-color: #d9d9d9;
+    padding-left: 1.5em;
+    box-shadow: 2px 3px 4px 1px #c7c7c7 , inset 2px 2px 10px #c7c7c7;
+}
+input::placeholder{
+    color: white;
+    font-size: 17px;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+h1{
+    color: black;
+}
+.passwordDiv{
+    height: 25%;
+}
+.alter{
+    color: #081F2E;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.haveAccount{
+    color: #081F2E;
+}
+.buttons {
+    background-color: #D9D9D9;
+    color: #565454;
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    width: 6em;
+    height: 3em;
+    box-shadow: 2px 3px 4px 1px #c7c7c7 ;
+}
+.buttons:hover {
+    box-shadow: 2px 5px 5px #afafaf, inset 5px 8px 15px #8a8787;
+    transition-duration: 0.3s;
+}
+.signSubmit{
+    background-color: #045174;
+    outline: none;
+    border: none;
+    color: white;
+    width: 8em;
+    padding: 0.8em;
+    border-radius: 10em;
+    text-shadow: 1px 1px 5px #081F2E;
+    box-shadow: 4px 4px 4px #00000040;
+    overflow: hidden;
+}
+.signSubmit:hover{
+    box-shadow: 5px 5px 8px #00000040, inset 8px 8px 20px #00000040;
+    transition-duration: 0.3s;
+}
+.signSubmit:before{
+    content: "";
+    display: block;
+    background-color: white;
+    box-shadow: 0 0 10px white , inset 0 0 10px white;
+    width: 0.8em;
+    height: 4em;
+    position: absolute;
+    opacity: 1;
+    translate: -3em -1.5em;
+    transform: rotate(20deg);
+    overflow: hidden;
+}
+.signSubmit:after{
+    content: "";
+    display: block;
+    background-color: rgba(255, 255, 255, 0.50);
+    box-shadow: 0 0 10px white , inset 0 0 10px white;
+    width: 0.8em;
+    height: 4em;
+    position: absolute;
+    opacity: 1;
+    translate: -4.5em -2.5em;
+    transform: rotate(20deg);
+    overflow: hidden;
+}
+.signSubmit:hover::before{
+    translate: 8em -1em;
+    transition: 1s;
+}
+.signSubmit:hover::after{
+    translate: 8.5em -2em;
+    transition: 1.2s;
+}
+
+.Login-Details{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.userInput:focus{
+    box-shadow: 4px 6px 5px 2px #c7c7c7 , inset 0 0 5px #c7c7c7;
+}
+.passInput:focus{
+    box-shadow: 4px 6px 5px 2px #c7c7c7;
+}
